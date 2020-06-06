@@ -3,7 +3,7 @@ const redux = require('redux');
 // createStore is a Function that allows us to make a new store!
 const createStore = redux.createStore;
 const initialState = {
-      counter: 0,
+      counter: 0
 
 }
 
@@ -36,6 +36,10 @@ const store = createStore(rootReducer);
 console.log(store.getState());
 
 
+// Subscription
+store.subscribe(()=> {
+      console.log("[Subscription]", store.getState());
+})
 
 
 
@@ -46,5 +50,3 @@ store.dispatch({type:'INC_COUNTER'});
 store.dispatch({type:'ADD_COUNTER',  payload:{ value: 10}});
 console.log(store.getState());
 
-
-// Subscription
