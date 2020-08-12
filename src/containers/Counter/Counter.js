@@ -44,5 +44,6 @@ const mapStateToProps =  state => {
         ctr: state.counter
     };
 };
+console.log(mapStateToProps.counter)
 
 export default connect(mapStateToProps)(Counter);
