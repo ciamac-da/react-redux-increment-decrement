@@ -1,5 +1,6 @@
 {
-  "name": "redux-re-u01",
+  "homepage": "https://ciamac-da.github.io/react-redux-increment-decrement",
+  "name": "react-redux-increment-decrement",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,11 +13,14 @@
     "react-scripts": "3.4.1",
     "redux": "^4.0.5"
   },
+  "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,7 +39,6 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
   "author": "",
   "license": "ISC"
 }
